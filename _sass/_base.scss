@@ -22,7 +22,6 @@ button {
  line-height: inherit;
 }
 
-
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -45,6 +44,8 @@ body {
 p {
   margin-top: 0;
   margin-bottom: 0.5em;
+  text-align: justify;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
