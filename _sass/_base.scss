@@ -1,10 +1,17 @@
 /**
   * Reset some basic elements
 */
+@import "bootsrap/bootstrap.scss";
+
 
 * {
  box-sizing: border-box !important;
  margin: 0; }
+
+.card-title {
+  font-weight: bold;
+  font-size: xx-large;
+}
 
 input,
 select,
