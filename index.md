@@ -39,7 +39,7 @@ For our anlysis, we use the Dunnhumby dataset. It contains shopping information 
 
 </section>
 
-## Meat: How much? Which one?
+## A First Look at Meat Consumption
 
 Morbi tempor et sapien porttitor viverra. Curabitur in nibh in ante pharetra faucibus sed ac massa. Nullam sagittis auctor nisi, ut condimentum nulla accumsan non. Duis mi arcu, molestie sit amet nisi ut, luctus molestie justo. Nam suscipit id sapien non dapibus. Maecenas aliquet venenatis justo, suscipit fermentum arcu. Nullam cursus tempus elit, eget finibus neque luctus nec.
 
@@ -47,8 +47,8 @@ Morbi tempor et sapien porttitor viverra. Curabitur in nibh in ante pharetra fau
 
 Aliquam ut lorem eu arcu vehicula volutpat non quis tortor. Donec placerat dui massa, id facilisis dui aliquet in. Vestibulum sit amet venenatis eros. Donec auctor sagittis mauris, eu placerat velit molestie in. Fusce quis dui tellus. Nunc molestie porttitor ipsum quis luctus. Proin id justo sed urna pulvinar dictum. Morbi aliquam interdum est eget ullamcorper.
 
+{% include meat_category.html %}
+
 ## Conclusion
 
 I love potatoes.
-
-<!-- {% include test_plot.html %} -->
