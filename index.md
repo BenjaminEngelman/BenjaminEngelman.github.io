@@ -43,7 +43,10 @@ Among all food-related transactions, 10% of them are vegetables and 16% of them 
 ## Time Analysis
 
 {% include monthly_meat.html %}
-*The graph above normalizes the total number of transactions of each category to 12 to have 1 as an expected score per month.
+
+<section id="legend" markdown="1">
+<p style="font-size: 0.8em;"><em>*The graph above normalizes the total number of transactions of each category to 12 so that the expected score per month is 1.</em></p>
+</section>
 
 Monthly consumption of vegetables and red and white meat does not vary however, we observe interesting variations for certain types of foods. For example, we have a peak for turkey on Thanksgiving and pumpkin in Halloween. Moreover, we observe some seasonal peaks with certain products such as seafood. Thus, preferences of people change seasonally or weekly (due to the special days) however it does not affect their meat and vegetable consumption in general.
 
@@ -72,27 +75,52 @@ The ratio of spending on red meat (p=0.001) and vegetables (p=0.02) tends to inc
   <div class="col-sm"></div>
   <div class="col-sm">
     <div class="btn-group" role="group" aria-label="Basic example" style="margin-top: 2em;">
-      <button type="button" class="btn btn-outline-dark" onclick="redMeat()">Red Meat</button>
-      <button type="button" class="btn btn-outline-dark" onclick="whiteMeat()">White Meat</button>
-      <button type="button" class="btn btn-outline-dark" onclick="seafood()">Seafood</button>
-      <button type="button" class="btn btn-outline-dark" onclick="vegetables()">Vegetables</button>
+      <button type="button" id="redmeat" class="btn btn-outline-dark active" onclick="redMeat()">Red Meat</button>
+      <button type="button" id="whitemeat" class="btn btn-outline-dark" onclick="whiteMeat()">White Meat</button>
+      <button type="button" id="seafood" class="btn btn-outline-dark" onclick="seafood()">Seafood</button>
+      <button type="button" id="vegetables" class="btn btn-outline-dark" onclick="vegetables()">Vegetables</button>
     </div>
   </div>
   <div class="col-sm"></div>
 </div>
 
+<div class="row">
+  <div class="col-sm"></div>
+  <div class="col-sm">
+     <img id="heatmap" src="assets/redmeat_HM.svg" style="margin-bottom:3em;">
+  </div>
+  <div class="col-sm"></div>
+</div>
+
 <script>
+var selected = "redmeat"
+
 function redMeat(){
-document.getElementById("wordCloud").src="assets/BM_vs_BV.png";
+document.getElementById(selected).classList.remove("active");
+selected = "redmeat"
+document.getElementById("heatmap").src="assets/redmeat_HM.svg";
+document.getElementById(selected).classList.add("active");
+
 }
 function whiteMeat(){
-document.getElementById("wordCloud").src="assets/O_vs_Y.png";
+document.getElementById(selected).classList.remove("active");
+selected = "whitemeat"
+document.getElementById("heatmap").src="assets/whiteMeat_HM.svg";
+document.getElementById(selected).classList.add("active");
+
 }
 function seafood(){
-document.getElementById("wordCloud").src="assets/R_vs_P.png";
+document.getElementById(selected).classList.remove("active");
+selected = "seafood"
+document.getElementById("heatmap").src="assets/seafood_HM.svg";
+document.getElementById(selected).classList.add("active");
+
 }
 function vegetables(){
-document.getElementById("wordCloud").src="assets/R_vs_P.png";
+document.getElementById(selected).classList.remove("active");
+selected = "vegetables"
+document.getElementById("heatmap").src="assets/vegetables_HM.svg";
+document.getElementById(selected).classList.add("active");
 }
 </script>
 
@@ -104,9 +132,9 @@ Let's take a closer look at certain extreme groups of people and see which produ
   <div class="col-sm"></div>
   <div class="col-sm">
     <div class="btn-group" role="group" aria-label="Basic example" style="margin: 1em;">
-      <button type="button" class="btn btn-outline-dark" onclick="extreme()">Extreme Consumers</button>
-      <button type="button" class="btn btn-outline-dark" onclick="youngOld()">Young vs Old</button>
-      <button type="button" class="btn btn-outline-dark" onclick="poorRich()">Poor vs Rich</button>
+      <button type="button" id="extreme" class="btn btn-outline-dark active" onclick="extreme()">Extreme Consumers</button>
+      <button type="button" id="youngold" class="btn btn-outline-dark" onclick="youngOld()">Young vs Old</button>
+      <button type="button" id="poorich" class="btn btn-outline-dark" onclick="poorRich()">Poor vs Rich</button>
     </div>
   </div>
   <div class="col-sm"></div>
@@ -116,14 +144,26 @@ Let's take a closer look at certain extreme groups of people and see which produ
 <img id="wordCloud" src="assets/BM_vs_BV.png" style="width:925px;height:219px; margin-bottom:4em;">
 
 <script>
+var selected2 = "extreme"
 function extreme(){
+document.getElementById(selected2).classList.remove("active");
+selected2 = "extreme"
 document.getElementById("wordCloud").src="assets/BM_vs_BV.png";
+document.getElementById(selected2).classList.add("active");
+
+
 }
 function youngOld(){
+document.getElementById(selected2).classList.remove("active");
+selected2 = "youngold"
 document.getElementById("wordCloud").src="assets/O_vs_Y.png";
+document.getElementById(selected2).classList.add("active");
 }
 function poorRich(){
+document.getElementById(selected2).classList.remove("active");
+selected2 = "poorich"
 document.getElementById("wordCloud").src="assets/R_vs_P.png";
+document.getElementById(selected2).classList.add("active");
 }
 </script>
 
