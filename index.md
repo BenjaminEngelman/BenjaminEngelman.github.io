@@ -6,12 +6,11 @@ layout: home
 
 ## Introduction
 
-Meat consumption is a highly controversial topic in nowadays society in terms of environment, health, and ethical reasons. This situation introduces different ways of consuming meat and divides people according to their behaviors such as vegan, vegetarian, occasional meat consumer, and people consuming large amounts of meats. In this story, we will be telling you the tale about the consumption behavior of meat and vegetables. If you are intersted in learning what are the factors influencing meat consumption or how does meat consumption influence other aspects of our alimentation this story is for you.
+Meat consumption is a highly controversial topic in nowadays society in terms of environment, health, and ethical reasons. This situation introduces different ways of consuming meat and divides people according to their behaviors such as vegan, vegetarian, occasional meat consumer, and people consuming large amounts of meats. In this data story, we will be telling you the tale about the consumption behavior of meat and vegetables on the household level. If you are interested in learning what are the factors influencing meat consumption or how does meat consumption influence other aspects of our alimentation this story is for you.
 
 ## The Data
 
-To tell our story, we will be using data collected over 2 years from frequent shoppers in the USA. It contains information about grocery shopping of 2500 households and the demographic information of 800 of them. We will be particularly focusing on 51,000 food products and their 2.1 million transactions.
-
+To tell our story, we will be using data collected over 2 years from frequent shoppers in the USA. It contains information about grocery shopping of 2500 households and the demographic information of 800 of them. We will be particularly focusing on 51.000 food products and their 2,1 million transactions.
 
 <section id="key_numbers_data" markdown="1">
 
@@ -41,18 +40,18 @@ To tell our story, we will be using data collected over 2 years from frequent sh
 
 <!-- For our analysis, we use the Dunnhumby dataset. It contains information about grocery shopping of 2500 households with the demographic information of 800 of them. We will be particularly focusing on 51,000 food products and 2.1 million transactions. -->
 
-Among all food-related transactions, 16% of them are products containing meat (seafood products are considered as a type of meat). As a comparison, when looking at vegetables this number drop to 10%.
+Among all food-related transactions, 16% of them are products containing meat (seafood products are considered as a type of meat and include fishes and other seafood). This number drops to 10% when we look at transactions for vegetables.
 
 
 ![](/assets/waffle_food_trans.svg)
 
-Among these meat products transactions, 40% of them are for poducts containing meat (eg. meat sandwiches, bolognes, ...), 36% are transactions related to red meat and 17% to white meat. We observe less seafood consumption which consists of only 7% of the transactions of meat products.
+Among these transactions for meat-based products, 40% of them are for products that contain meat (eg. meat sandwiches, bolognese, etc.). 36% of them are transactions related to red meat and 17% to white meat. We observe less seafood consumption which consists of only 7% of the transactions of meat products.
 
 ![](/assets/waffle_meat_trans.svg)
 
 ## Time Analysis
 
-Does our consumption of meat and vegeatable vary accorss the year?  This is the first question we will try to answer. To do so, let's look  at the number tansactions over the year for different type of food.
+Does the meat and vegetable consumption vary in time? Are there any seasonal or monthly exceptions? This is the first question we will try to answer. To do so, let’s look at the number of transactions over the year for a different type of food.
 
 {% include monthly_meat.html %}
 
@@ -60,22 +59,19 @@ Does our consumption of meat and vegeatable vary accorss the year?  This is the 
 <p style="font-size: 0.8em;"><em>*The graph above normalizes the total number of transactions of each category to 12 so that the expected score per month is 1.</em></p>
 </section>
 
-Our monthly consumption of vegetables, red and white meat stays pretty much constant. However, we can observe interesting variations for certain types of foods. 
+Monthly consumption of vegetables, red and white meat stays pretty much constant. However, we can observe interesting variations for certain types of foods. 
 
-For example, we have a peak for turkey on Thanksgiving and pumpkin in Halloween. Moreover, people seems to buy more seafood during the winter. 
+For example, we have a peak for turkey on Thanksgiving and pumpkin in Halloween. Moreover, people seem to buy more seafood during the winter.
 
-Thus, preferences of people change seasonally or weekly (due to the special days) for some specific products but time does not seems to affect their meat and vegetable consumption in general.
+Thus, preferences of people change seasonally or weekly (due to the special days) for some specific products but time does not seem to affect their meat and vegetable consumption in general.
 
 ## Demographic Factors
 
-If time does not influence our consumption of meat and vegeatable, what does? 
-Some people might think that men consume more meat than women so let's look at the consumption  of theses 2 groups.
+How about some demographic factors? Are there any differences between men and women? Does the income of a household or age affect our preferences?
 
 {% include gender.html %}
 
-As we can see from the figure above, women and men tend to spent very similar amount on all type of meat. Women spend slighlty more than men on vegetable.  
-
-Let's now look at 2 others factors: age and income. 
+As we can see from the figure above, women and men tend to spend a very similar amount on all types of meat. However, Women spend slightly more than men on vegetables. Let's continue with age and income! 
 
 <section id="sliders" markdown="1">
   <div class="container">
@@ -90,7 +86,7 @@ Let's now look at 2 others factors: age and income.
   </div>
 </section>
 
-The ratio of spending on red meat and vegetables tends to increase with age. In contrast, we observe a decreasing trend when looking at white meat. In terms of income, richer people spend less portion of their money on meat and products containing meat. People in the highest income category spend a higher  portion of their money on seafood products.
+The ratio of spending on red meat and vegetables tends to increase with age. In contrast, we observe a decreasing trend when we look at white meat. In terms of income, richer people spend less portion of their money on meat and products containing meat. Another interesting observation is that the people in the highest income category spend a higher portion of their money on seafood products.
 
 <div class="row">
   <div class="col-sm"></div>
@@ -112,6 +108,8 @@ The ratio of spending on red meat and vegetables tends to increase with age. In 
   </div>
   <div class="col-sm"></div>
 </div>
+
+We observe that white meat is more popular compared to red meat in rich and young households and as they getting poorer and older they prefer red meat over white meat. On the other hand, seafood and vegetables are more popular among older and richer households.
 
 <script>
 var selected = "redmeat"
@@ -165,8 +163,7 @@ We are now going to take a closer look at certain extreme groups of people and s
 
   <h3>Extreme Consumers</h3>
 
-  <p>We select, among all the households, the 5% that spent the biggest part of their food spendings on meat. These people are categorized as "extreme meat consumers". 
-  We apply the same selection strategy to obtain the "extreme vegetable consumers".</p>
+  <p>We select, among all the households, 5% of households spent the biggest part of their food spendings on meat. These people are categorized as "extreme meat consumers". We apply the same selection strategy to obtain the "extreme vegetable consumers".</p>
 
   <p>We look at the popular words in the description of the products consumed by those groups. Red and green words represent extreme meat and extreme vegetable consumers respectively.</p>
 
@@ -177,11 +174,13 @@ We are now going to take a closer look at certain extreme groups of people and s
 
   {% include meat_extremeMeatVSextremeVeggies.html %}
 
-  <p>Looking specifically at meat spendings, we see that extreme meat consumers spend most of their money on bovine meat (31%) followed by poultry and pork (both 24%).</p>
+  <p>Looking specifically at meat spendings, we see that extreme meat consumers spend most of their money on bovine  meat (31%) followed by poultry and pork (both 24%).</p>
 
-  <p>On the other hand, extreme vegetable consumers spend most of their money to buy poultry (32%) followed by bovine meat (24%) and pork (19%). They also spend more money on seafood compare to extreme meat consumers (15% vs 10%).</p>
+  <p>On the other hand, extreme vegetable consumers spend most of their money to buy poultry (32%) followed by bovine meat (24%) and pork (19%). They also spend more money on seafood compared to extreme meat consumers (15% vs 10%). Thus, we can say that they tend to prefer poultry and seafood more than extreme meat consumers.</p>
 
   {% include commodities_extremes.html %}
+
+  Let's dive deep into our analysis by looking at the products where the two groups have the most different behavior! By looking at those specific products, we observe that extreme meat consumers tend to consume more high-calorie foods such as beer, milk products, and frozen pizza whereas extreme vegetables consumers consuming low-calorie and more healthy foods such as fruits, wine, and sushi.
 
 </div>
 
@@ -189,19 +188,21 @@ We are now going to take a closer look at certain extreme groups of people and s
 
   <h3>Young vs Old</h3>
 
-  <p>We select, among all the households, the 5% that spent the biggest part of their food spendings on meat. These people are categorized as "extreme meat consumers". We apply the same selection strategy to obtain the "extreme vegetable consumers".</p>
+  <p>We select the households with people aged between 19 to 34 and above 55 where two groups have representation over 100 households and analyze their product and meat preferences.</p>
 
-  <p>We look at the popular words in the description of the products consumed by those groups. Blue and brown words represent young and brown consumers respectively.</p>
+  <p>We look at the popular words in the description of the products consumed by those groups. Blue and brown words represent young and old consumers respectively.</p>
 
   <img id="wordCloud" src="assets/O_vs_Y.png" style="width:925px;height:219px; margin-bottom:4em;">
 
-  <p>Although old and young people have similar preferences in general, old people tend to consume have a more balanced diet where they consume more fruit, juice, salad compared to chips and snacks.</p>
+  <p>Although old and young people have similar preferences in general, old people tend to have a more balanced diet where they consume more fruit, juice, salad compared to chips and snacks.</p>
 
   
   {% include meat_youngestVSoldest.html %}
   
 
-  <p>Looking specifically at meat spendings, we see that heavy meat buyers prefer to buy bovine meat (33%) followed by pork (24%) and poultry (21%). On the other hand, heavy vegetable buyers prefer to buy poultry (32%) followed by bovine meat (27%) and pork (19%).</p>
+  <p>The preferences for bovine and seafood are very similar however older people prefer pork over poultry. Moreover, youngest consumers mainly spends their monney on poultry and bovine meat whereas oldest people prefer pork and bovine meat.
+
+</p>
 
 </div>
 
@@ -209,9 +210,9 @@ We are now going to take a closer look at certain extreme groups of people and s
 
   <h3>Lowest vs Highest Income</h3>
 
-  <p>We select, among all the households, the 5% that spent the biggest part of their food spendings on meat. These people are categorized as "extreme meat consumers". We apply the same selection strategy to obtain the "extreme vegetable consumers".</p>
+  <p>We select the households with income under 50K and above 100K where two groups have representation over 100 households and analyze their product and meat preferences.</p>
 
-  <p>We look at the popular words in the description of the products consumed by those groups. Dark-brwon and yellow words represent lowest and highest income consumers respectively.</p>
+  <p>We look at the popular words in the description of the products consumed by those groups. Dark-brown and yellow words represent the lowest and highest income consumers respectively.</p>
 
   <img id="wordCloud" src="assets/R_vs_P.png" style="width:925px;height:219px; margin-bottom:4em;">
 
@@ -219,10 +220,10 @@ We are now going to take a closer look at certain extreme groups of people and s
 
   {% include meat_lowestVShighest_income.html %}
 
-  
+  <p>Similar to our observations in the demographic factor section, we see that seafood and poultry are more popular in households with higher income however bovine and pork preference do not significantly change.
+  Looking at each plot separately, we can also observe that lowest income houselholds prefer pork over poultry whereas highest income households prefer poultry over pork.</p>
 
-  <p>Looking specifically at meat spendings, we see that heavy meat buyers prefer to buy bovine meat (33%) followed by pork (24%) and poultry (21%). On the other hand, heavy vegetable buyers prefer to buy poultry (32%) followed by bovine meat (27%) and pork (19%).</p>
-
+Highest income consumers also buy more seafoods than lowest income consumers.
 </div>
 
 
@@ -276,7 +277,6 @@ We are now going to take a closer look at certain extreme groups of people and s
 
 
 ## Notes
-p-values are provided for equality of means via ANOVA test with a 95% confidence interval. 
-
-All the error bars are computed using 95% confidence interval. 
+All the error bars are computed using 95% confidence interval.<br/>
+The detailed analysis of the this project is available [here](https://nbviewer.jupyter.org/github/BenjaminEngelman/ADA-Project/blob/master/main.ipynb?flush_cache=true).
 
