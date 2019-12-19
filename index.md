@@ -278,5 +278,5 @@ Highest income consumers also buy more seafoods than lowest income consumers.
 
 ## Notes
 All the error bars are computed using 95% confidence interval.<br/>
-The detailed analysis of the this project is available [here](https://nbviewer.jupyter.org/github/BenjaminEngelman/ADA-Project/blob/master/main.ipynb?flush_cache=true).
+The detailed analysis of this project is available [here](https://nbviewer.jupyter.org/github/BenjaminEngelman/ADA-Project/blob/master/main.ipynb?flush_cache=true).
 
