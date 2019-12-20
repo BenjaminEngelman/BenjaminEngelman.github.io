@@ -215,9 +215,10 @@ We are now going to take a closer look at certain extreme groups of people and s
 
   <p>We look at the popular words in the description of the products consumed by those groups. Dark-brown and yellow words represent the lowest and highest income consumers respectively.</p>
 
+
   <img id="wordCloud" src="assets/R_vs_P.png" style="width:925px;height:219px; margin-bottom:4em;">
 
-  <p>In terms of income, people with lower income prefer to spend most of their food money on meat and meat-related products whereas people with higher income spend their money more luxury products like wines, expensive cereals, and fruits.</p>
+  <p>Households with lower income tend to spend more on beef and snacks whereas higher income households spend more on fruits and wines.</p>
 
   {% include meat_lowestVShighest_income.html %}
 
