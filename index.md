@@ -6,7 +6,7 @@ layout: home
 
 ## Introduction
 
-Meat consumption is a highly controversial topic in nowadays society in terms of environment, health, and ethical reasons. This situation introduces different ways of consuming meat and divides people according to their behaviors such as vegan, vegetarian, occasional meat consumer, and people consuming large amounts of meats. In this data story, we will be telling you the tale about the consumption behavior of meat and vegetables on the household level. If you are interested in learning what are the factors influencing meat consumption or how does meat consumption influence other aspects of our alimentation this story is for you.
+Meat consumption is a highly controversial topic in nowadays society in terms of environment, health, and ethical reasons. This situation introduces different ways of consuming meat and divides people according to their behaviors such as vegan, vegetarian, occasional meat consumer, and people consuming large amounts of meats. In this data story, we will be telling you the tale about the consumption behavior of meat and vegetables on the household level. If you are interested in learning what are the factors affecting meat consumption or how does meat consumption influences other aspects of our alimentation this story is for you.
 
 ## The Data
 
@@ -45,7 +45,7 @@ Among all food-related transactions, 16% of them are products containing meat (s
 
 ![](/assets/waffle_food_trans.svg)
 
-Among these transactions for meat-based products, 40% of them are for products that contain meat (eg. meat sandwiches, bolognese, etc.). 36% of them are transactions related to red meat and 17% to white meat. We observe less seafood consumption which consists of only 7% of the transactions of meat products.
+Among these transactions for meat products, 40% of them are for partially meat based-products (eg. meat sandwiches, bolognese, etc.). 36% of them are transactions related to red meat and 17% to white meat. We observe less seafood consumption which consists of only 7% of the transactions of meat products.
 
 ![](/assets/waffle_meat_trans.svg)
 
@@ -59,9 +59,9 @@ Does the meat and vegetable consumption vary in time? Are there any seasonal or 
 <p style="font-size: 0.8em;"><em>*The graph above normalizes the total number of transactions of each category to 12 so that the expected score per month is 1.</em></p>
 </section>
 
-Monthly consumption of vegetables, red and white meat stays pretty much constant. However, we can observe interesting variations for certain types of foods. 
+Monthly consumption of vegetables, red and white meat stays reasonably constant. However, we can observe interesting variations for certain types of foods. 
 
-For example, we have a peak for turkey on Thanksgiving and pumpkin in Halloween. Moreover, people seem to buy more seafood during the winter.
+For example, we have a peak for turkey on Thanksgiving and for pumpkin during Halloween. Moreover, people seem to buy more seafood during the winter.
 
 Thus, preferences of people change seasonally or weekly (due to the special days) for some specific products but time does not seem to affect their meat and vegetable consumption in general.
 
@@ -145,7 +145,7 @@ document.getElementById(selected).classList.add("active");
 
 ## Group Comparison
 
-We are now going to take a closer look at certain extreme groups of people and see which products are popular for them! We are specifically interested in three different comparisons. The first comparison is extreme meat consumers vs extreme vegetable consumers. Then, we compare people aged between 19-35 and above 55. Finally, we look at households with an income under 50K and above 100K. 
+We are now going to take a closer look at certain extreme groups of people and see which products are popular for them! We are specifically interested in three different comparisons. The first comparison is between extreme meat consumers vs extreme vegetable consumers. Then, we compare people aged between 19-35 and above 55. Finally, we look at households with an income under 50K and above 100K. 
 
 <div class="row">
   <div class="col-sm"></div>
